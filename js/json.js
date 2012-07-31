@@ -78,13 +78,13 @@ var json = {
 	},
 	"pet8": {
 		"petGroups": ["Kool Pet Type:", "Mythical"],
-		"petName": ["Kool Pet\'s Name:", "Snoopy"],
-		"petEmail": ["Kool Pet Email:", "Snoopy@petmail.com"],
+		"petName": ["Kool Pet\'s Name:", "Unicorn Joe"],
+		"petEmail": ["Kool Pet Email:", "UJoe@petmail.com"],
 		"genderValue": ["Gender:", "Male"],
 		"favePet": ["Favorite Kool Pet:", "Yes"],
-		"birthDate": ["Date of Birth:", "2005-04-15"],
-		"koolness": ["Koolness Factor:", "50"],
-		"comments": ["Comments:", "He's so cute!"]
+		"birthDate": ["Date of Birth:", "1900-07-01"],
+		"koolness": ["Koolness Factor:", "75"],
+		"comments": ["Comments:", "Unicorn Joe to the rescue!"]
 	},
 	"pet9": {
 		"petGroups": ["Kool Pet Type:", "Dogs"],
