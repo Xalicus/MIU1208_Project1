@@ -54,6 +54,24 @@ article {
 	max-width: 480px;
 }
 
+div.searchPets {
+	font-family: "Times New Roman", Times, serif;
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 5px;
+	background: #CCFFFF;
+	color: darkgreen;
+}
+
+div.browsePets {
+	font-family: "Times New Roman", Times, serif;
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 5px;
+	background: #CCFFFF;
+	color: darkgreen;
+}
+
 form {
 	line-height: 1.0em;
 	letter-spacing: .001em;
