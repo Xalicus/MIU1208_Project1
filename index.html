@@ -40,12 +40,15 @@ Date: 07-30-2012
 		<!-- Main body of page -->
 		<article>
 			<nav>
-				<p>Click here to add more Kool Pets!<br />
-				<a href="additem.html">ADD A KOOL PET NOW!</a></p>
+				<p>Click here to add more KoolPets!</p>
+				<p><a href="additem.html" id="addPet">ADD A KOOLPET NOW!</a></p>
 			</nav>
 			<div id="searchPets">
-				<p>Search Pets</p>
-				<p>Search bar goes here.</p>
+				<p>Search KoolPets</p>
+				<form name="searchPets" onSubmit="searchPet();">
+					<input type="text" name="searchKoolPets">
+					<input type="submit" name="searchSubmit" value="Search KoolPets">
+				</form>
 			</div>
 			<div id="browsePets">
 				<p>Browse KoolPets</p>

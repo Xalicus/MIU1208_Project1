@@ -113,6 +113,14 @@ a:hover {
 	color: darkgreen;
 }
 
+a#addPet {
+	border: 1px solid #FF6600;
+	margin: 5px 10px;
+	padding: 5px;
+	color: #0000FF;
+	text-shadow: 1px 1px 2px #FF00FF;
+}
+
 span {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #006600;
