@@ -54,6 +54,12 @@ article {
 	max-width: 480px;
 }
 
+article#KoolPetForm {
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 5px;
+}
+
 div#searchPets {
 	font-family: "Times New Roman", Times, serif;
 	margin: 5px 10px;
