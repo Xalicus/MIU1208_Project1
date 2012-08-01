@@ -96,11 +96,11 @@ window.addEventListener("DOMContentLoaded", function(){
 		getCheckboxValue();
 		
 		var item				= {};
-			item.petGroups		= ["Kool Pet Type:", gebi("petGroups").value];
-			item.petName		= ["Kool Pet\'s Name:", gebi("petName").value];
-			item.petEmail		= ["Kool Pet Email:", gebi("petEmail").value];
+			item.petGroups		= ["KoolPet Type:", gebi("petGroups").value];
+			item.petName		= ["KoolPet\'s Name:", gebi("petName").value];
+			item.petEmail		= ["KoolPet Email:", gebi("petEmail").value];
 			item.genderValue	= ["Gender:", genderValue];
-			item.favePet		= ["Favorite Kool Pet:", faveValue];
+			item.favePet		= ["Favorite KoolPet:", faveValue];
 			item.birthDate		= ["Date of Birth:", gebi("birthDate").value];
 			item.koolness		= ["Koolness Factor:", gebi("koolness").value];
 			item.comments		= ["Comments:", gebi("comments").value];
@@ -113,7 +113,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	function getData() {
 		toggleControls("on");
 		if(localStorage.length === 0) {
-			alert("There are no Pets in the KoolPetsDex, so default Pets were added.");
+			alert("There are no Pets in the KoolPetsDex, so default KoolPets were added.");
 			autoFillData();
 		};
 		
@@ -176,7 +176,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var editLink = document.createElement("a");
 		editLink.href = "#";
 		editLink.key = key;
-		var editText = "Edit Pet";
+		var editText = "Edit KoolPet";
 		editLink.addEventListener("click", editItem);
 		editLink.innerHTML = editText;
 		linksLi.appendChild(editLink);
@@ -190,7 +190,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var deleteLink = document.createElement("a");
 		deleteLink.href = "#";
 		deleteLink.key = key;
-		var deleteText = "Release Pet";
+		var deleteText = "Release KoolPet";
 		deleteLink.addEventListener("click", deleteItem);
 		deleteLink.innerHTML = deleteText;
 		linksLi.appendChild(deleteLink);
@@ -227,7 +227,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		// Remove the initial listener from the input "save pet" button.
 		saveData.removeEventListener("click", submit);
 		// Change Submit button Value to Edit Button
-		gebi("submit").value = "Edit Pet";
+		gebi("submit").value = "Edit KoolPet";
 		var editSubmit = gebi("submit");
 		
 		// Save the key value established in this function as a prop of the editSubmit event
@@ -238,23 +238,23 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	// My Delete Item Function
 	function deleteItem() {
-		var ask = confirm("Are you sure you want to release this Kool Pet?");
+		var ask = confirm("Are you sure you want to release this KoolPet?");
 		if (ask) {
 			localStorage.removeItem(this.key);
-			alert("Kool Pet WAS Released!!!");
+			alert("KoolPet WAS Released!!!");
 			window.location.reload();
 		} else {
-			alert("Kool Pet was NOT Released!");
+			alert("KoolPet was NOT Released!");
 		};
 	};
 	
 	// My Clear Data Function
 	function clearDataStorage() {
 		if(localStorage.length === 0) {
-			alert("No Kool Pets in the KoolPetsDex.");
+			alert("No KoolPets in the KoolPetsDex.");
 		} else {
 			localStorage.clear();
-			alert("All Kool Pets have been Released!");
+			alert("All KoolPets have been Released!");
 			window.location.reload();
 			return false;
 		};
@@ -278,14 +278,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		// Pet Type Validation
 		if (getPetGroups.value === "--Choose A Pet Group--") {
-			var petGroupsError = "Please choose a Kool Pet Group!";
+			var petGroupsError = "Please choose a KoolPet Group!";
 			getPetGroups.style.border = "1px solid red";
 			messageArray.push(petGroupsError);
 		};
 		
 		// Pet Name Validation
 		if (getPetName.value == "") {
-			var petNameError = "Please enter a Kool Pet Name!";
+			var petNameError = "Please enter a KoolPet Name!";
 			getPetName.style.border = "1px solid red";
 			messageArray.push(petNameError);
 		};
@@ -294,7 +294,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var re = /^\w+([\.\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w{2,3})+$/;
 		var re2 = /^([a-z0-9])([\w\.\-\+])+([a-z0-9])\@((\w)([\w\-]?)+\.)+([a-z]{2,6})$/;
 		if (!(re.exec(getPetEmail.value))) {
-			var petEmailError = "Please enter an email for your Kool Pet!";
+			var petEmailError = "Please enter an email for your KoolPet!";
 			getPetEmail.style.border = "1px solid red";
 			messageArray.push(petEmailError);
 		};
