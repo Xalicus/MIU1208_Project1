@@ -31,10 +31,6 @@ header {
 
 h1 {
 	font-family: "Times New Roman", Times, serif;
-	margin: 5px 10px;
-	border: 1px solid #FF6600;
-	padding: 5px;
-	background: #CCFFFF;
 	color: darkgreen;
 }
 
@@ -78,10 +74,11 @@ div#browsePets {
 	color: darkgreen;
 }
 
-nav#addPets {
+nav#addPetFeature {
 	margin: 5px 10px;
 	border: 1px solid #FF6600;
 	padding: 5px;
+	background: #CCFFFF;
 }
 
 form {
@@ -131,7 +128,7 @@ a#addPet {
 	padding: 5px;
 	color: #0000FF;
 	text-shadow: 1px 1px 2px #FF00FF;
-	background: #CCFFFF;
+	background: #CCFFCC;
 }
 
 span {
