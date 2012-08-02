@@ -35,10 +35,11 @@ h1 {
 
 h2 {
 	font-family: "Times New Roman", Times, serif;
-	margin: 5px 10px;
-	border: 1px solid #FF6600;
-	padding: 5px;
-	background: #CCFFFF;
+	color: darkgreen;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
 	color: darkgreen;
 }
 
@@ -52,18 +53,10 @@ article#KoolPetForm {
 	margin: 5px 10px;
 	border: 1px solid #FF6600;
 	padding: 5px;
+	background: #CCFFFF;
 }
 
 div#searchPets {
-	font-family: "Times New Roman", Times, serif;
-	margin: 5px 10px;
-	border: 1px solid #FF6600;
-	padding: 5px;
-	background: #CCFFFCC;
-	color: darkgreen;
-}
-
-div#browsePets {
 	font-family: "Times New Roman", Times, serif;
 	margin: 5px 10px;
 	border: 1px solid #FF6600;
@@ -72,10 +65,40 @@ div#browsePets {
 	color: darkgreen;
 }
 
+div#browsePets {
+	font-family: "Times New Roman", Times, serif;
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 5px;
+	background: #CCFFFF;
+	color: darkgreen;
+}
+
+div#author {
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 5px;
+	background: #CCFFFF;
+}
+
+div#underconst {
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 5px;
+	background: #CCFFFF;
+}
+
 nav#addPetFeature {
 	margin: 5px 10px;
 	border: 1px solid #FF6600;
 	padding: 5px;
+	background: #CCFFFF;
+}
+
+nav#navi {
+	margin: 5px 10px;
+	border: 1px solid #FF6600;
+	padding: 1px;
 	background: #CCFFFF;
 }
 
